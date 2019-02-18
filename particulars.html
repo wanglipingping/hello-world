@@ -1,0 +1,1317 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" Content="text/html; charset=utf-8;">
+		<title>移动端触摸滑动</title>
+		<meta name="author" content="rainna" />
+		<meta name="keywords" content="rainna's js lib" />
+		<meta name="description" content="移动端触摸滑动" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css">
+		<link rel="stylesheet" href="css/particuars.css" />
+	</head>
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<p class="mui-pull-left iconfont icon-back"></p>
+		</header>
+		<div class="vid">
+			<div class="video-mi">
+					<div class="shade">
+				<p>无法播放</p>
+				<p>需购买该视频进行观看</p>
+				<button id="btn-open">点击购买</button>
+			</div>
+			<video id="video" data-id="" src="video/oceans.mp4" poster="img/poster.png"></video>
+			<div class="foot"><!--视频控件-->
+							<ul class="control">
+								<li class="play">
+									<i class="iconfont icon-playfill"></i>
+								</li>
+							</ul>
+							<div class="time-cont">
+								<div class="progress">
+									<div class="inner">
+										<div class="dot"></div>
+									</div>
+								</div>
+								<span class="current">00:00</span> <span>/</span>
+								<span class="duration">00:00</span>
+							</div>
+							<div id="voc1" class="voc1">
+								<i class="iconfont icon-fangda"></i>
+							</div>
+			</div>
+			
+			</div>
+		<div class="mian">
+				<div class="toolg">
+					<p   class="active">简介</p>
+					<p>评论<span>123</span></p>
+				</div>
+				<div class="abstr">
+						<div class="to-mian">
+							<div class="mi-top">
+								<div class="left">
+									<div class="head">
+										<img src="img/photo.png" />
+									</div>
+									<div class="txt">
+										<span>张三</span>
+									    <p><span id="folnum">156280</span>粉丝</p>
+									</div>
+								</div>
+								<div class="rigth">
+									<div class="txt mui-pull-right" id="follow">
+									  <span>+ 	关注</span>
+									</div>
+								</div>
+							</div>
+							<div class="int">
+							    <p>PS教程！怎样从零开始制作粉色PS教程！怎样从零开始制作粉色lumix拟物相机？</p>
+							</div> 
+							<div class="mui-bar-tab">
+									<a class="mui-tab-item mui-active">
+									    <span class="mui-icon iconfont icon-zan" id="zan"></span>
+									    <span class="mui-tab-label mui1" id="zannum">2459</span>
+									</a>
+									<a class="mui-tab-item mui-active">
+									    <span class="mui-icon iconfont icon-cai1" id="cai"></span>
+									    <span class="mui-tab-label mui2" id="cainum">2459</span>
+									</a>
+									<a class="mui-tab-item mui-active">
+									    <span class="mui-icon iconfont icon-likefill" id="fill"></span>
+									    <span class="mui-tab-label mui3" id="fillnum">2459</span>
+									</a>
+									<a class="mui-tab-item mui-active">
+									    <span class="mui-icon iconfont icon-fenxiang" id="fenx"></span>
+									    <span class="mui-tab-label mui4" id="fenxnum">2459</span>
+									</a>
+									 
+							</div>
+							<!--<p class="">取消赞 才可以踩哦</p>-->
+						    <div class="cat">
+						    	<p>Photoshop</p>
+						    	<p>PS教程</p>
+						    	<p>平面设计</p>
+						    </div>
+						</div>
+					    <div class="to-bott">
+					    	<div class="top">
+					    		<p class="mui-pull-left">选集</p>
+					    		<p class="mui-pull-right"><i id="coll" class="iconfont icon-xiala-"></i></p>
+					    	</div>
+					    	<ul class="chapter">
+					    		<li class="active">1</li>
+					    		<li>2</li>
+					    		<li>3</li>
+					    		<li>4</li>
+					    		<li>5</li>
+					    		<li>6</li>
+					    		<li>7</li>
+					    		<li>8</li>
+					    		<li>9</li>
+					    		<li>10</li>
+					    		<li>11</li>
+					    		<li>12</li>
+					    		<li>13</li>
+					    	</ul>
+					    </div>
+					    <div class="banner">
+					    	<img src="img/banan.jpg" />
+					    </div>
+					    <div class="to-poti">
+					    	<div class="top">
+					    		<p class="mui-pull-left">相关课程</p>
+					    		<p class="mui-pull-right" id="open"><i class="iconfont icon-right"></i></p>
+					    	</div>
+					    	<ul class="chapter">
+					    		<li>
+					    		   <div class="img">
+					    		   	  <img src="img/intor.jpg" />
+					    		   </div>
+					    		   <p>从零开始制作粉色lumix拟物相机？</p>
+					    		</li>
+					    		<li>
+					    		   <div class="img">
+					    		   	  <img src="img/intor.jpg" />
+					    		   </div>
+					    		   <p>从零开始制作粉色lumix拟物相机？</p>
+					    		</li>
+					    		<li>
+					    		   <div class="img">
+					    		   	  <img src="img/intor.jpg" />
+					    		   </div>
+					    		   <p>从零开始制作粉色lumix拟物相机？</p>
+					    		</li>
+					    	</ul>
+					    </div>
+					    <div class="to-poti">
+					    	<div class="top">
+					    		<p class="mui-pull-left">相关课程</p>
+					    		<p class="mui-pull-right" id="open2"><i class="iconfont icon-right"></i></p>
+					    	</div>
+					    	<ul class="chapter">
+					    		<li>
+					    		   <div class="img">
+					    		   	  <img src="img/intor.jpg" />
+					    		   </div>
+					    		   <p>从零开始制作粉色lumix拟物相机？</p>
+					    		</li>
+					    		<li>
+					    		   <div class="img">
+					    		   	  <img src="img/intor.jpg" />
+					    		   </div>
+					    		   <p>从零开始制作粉色lumix拟物相机？</p>
+					    		</li>
+					    		<li>
+					    		   <div class="img">
+					    		   	  <img src="img/intor.jpg" />
+					    		   </div>
+					    		   <p>从零开始制作粉色lumix拟物相机？</p>
+					    		</li>
+					    	</ul>
+					    </div>
+					    <div class="to-poti">
+					    	<div class="top">
+					    		<p class="mui-pull-left">相关课程</p>
+					    		<p class="mui-pull-right"><i class="iconfont icon-right"></i></p>
+					    	</div>
+					    	<ul class="chapter">
+					    		<li>
+					    		   <div class="img">
+					    		   	  <img src="img/intor.jpg" />
+					    		   </div>
+					    		   <p>从零开始制作粉色lumix拟物相机？</p>
+					    		</li>
+					    		<li>
+					    		   <div class="img">
+					    		   	  <img src="img/intor.jpg" />
+					    		   </div>
+					    		   <p>从零开始制作粉色lumix拟物相机？</p>
+					    		</li>
+					    		<li>
+					    		   <div class="img">
+					    		   	  <img src="img/intor.jpg" />
+					    		   </div>
+					    		   <p>从零开始制作粉色lumix拟物相机？</p>
+					    		</li>
+					    	</ul>
+					    </div>
+				</div>
+				<div class="comnt">
+					<ul>
+						<li><p  class="active">全部评论</p><p  class="active">1</p></li>
+						<li><p>好评</p><p>1</p></li>
+						<li><p>中评</p><p>0</p></li>
+						<li><p>差评</p><p>0</p></li>
+					</ul>
+					<div class="all-crit">
+						<div class="comtxt">
+							<div class="c-head">
+								<div class="img">
+									<img src="img/1.png" />
+									<p>王小二</p>
+								</div>
+								<p>2019-1-3 18:40:20</p>
+							</div>
+							<div class="c-xin">
+								<span class="iconfont icon-xingxing"></span>
+								<span class="iconfont icon-xingxing"></span>
+								<span class="iconfont icon-xingxing"></span>
+								<span class="iconfont icon-xingxing"></span>
+								<span class="iconfont icon-xingxing"></span>
+							</div>						
+							<div class="c-body"><p>很好  我已经脱离小白啦我已经脱离小白啦我已经脱离小白啦我已经脱离小白啦我已经脱离小白啦</p></div>						
+							<div class="c-tu">
+								<img src="img/lunbotu.jpg" />
+								<img src="img/lunbotu.jpg" />
+								<img src="img/lunbotu.jpg" />
+							</div>
+							<div class="crit">
+								<span class="iconfont icon-zan"></span>
+								<span  class="iconfont icon-changyonghuifu2" id="key-crit"></span>
+							</div>
+							<div class="crita  active" id="crita">
+							<div class="cr-te-mian">
+								<span class="cr-name">王小二：</span>
+								<span class="cr-t">新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐</span>
+							</div>
+							<div class="cr-te-bott">
+								<span id="chakan">查看更多  ></span>
+							</div>
+						</div>
+					    </div>
+					    <div class="comtxt">
+							<div class="c-head">
+								<div class="img">
+									<img src="img/1.png" />
+									<p>王小二</p>
+								</div>
+								<p>2019-1-3 18:40:20</p>
+							</div>
+							<div class="c-xin">
+								<span class="iconfont icon-xingxing"></span>
+								<span class="iconfont icon-xingxing"></span>
+								<span class="iconfont icon-xingxing"></span>
+								<span class="iconfont icon-xingxing"></span>
+								<span class="iconfont icon-xingxing"></span>
+							</div>						
+							<div class="c-body"><p>很好  我已经脱离小白啦我已经脱离小白啦我已经脱离小白啦我已经脱离小白啦我已经脱离小白啦</p></div>						
+							<div class="c-tu">
+								<img src="img/lunbotu.jpg" />
+								<img src="img/lunbotu.jpg" />
+								<img src="img/lunbotu.jpg" />
+							</div>
+							<div class="crit">
+								<span class="iconfont icon-zan"></span>
+								<span  class="iconfont icon-changyonghuifu2" id="key-crit"></span>
+							</div>
+							<div class="crita  active" id="crita">
+							<div class="cr-te-mian">
+								<span class="cr-name">王小二：</span>
+								<span class="cr-t">新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐</span>
+							</div>
+							<div class="cr-te-mian">
+								<span class="cr-name">小默：</span>
+								<span class="cr-t">新年快乐新年快乐</span>
+							</div>
+							<div class="cr-te-mian">
+								<span class="cr-name">张二：</span>
+								<span class="cr-t">新年快乐新年快乐新年快乐新年快乐</span>
+							</div>
+							<div class="cr-te-mian">
+								<span class="cr-name">小默：</span>
+								<span class="cr-t">新年快乐新年快乐新年快乐</span>
+							</div>
+							<div class="cr-te-mian">
+								<span class="cr-name">王小二：</span>
+								<span class="cr-t">新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐</span>
+							</div>
+							<div class="cr-te-mian">
+								<span class="cr-name">李大爷：</span>
+								<span class="cr-t">新年快乐新年快乐</span>
+							</div>
+							<div class="cr-te-mian">
+								<span class="cr-name">张二：</span>
+								<span class="cr-t">新年快乐新年快乐新年快乐新年快乐</span>
+							</div>
+							<div class="cr-te-mian">
+								<span class="cr-name">小默：</span>
+								<span class="cr-t">新年快乐新年快乐新年快乐</span>
+							</div>
+							<div class="cr-te-mian">
+								<span class="cr-name">王小二：</span>
+								<span class="cr-t">新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐</span>
+							</div>
+							<div class="cr-te-mian">
+								<span class="cr-name">李大爷：</span>
+								<span class="cr-t">新年快乐新年快乐</span>
+							</div>
+							<div class="cr-te-mian">
+								<span class="cr-name">张二：</span>
+								<span class="cr-t">新年快乐新年快乐新年快乐新年快乐</span>
+							</div>
+							<div class="cr-te-mian">
+								<span class="cr-name">小默：</span>
+								<span class="cr-t">新年快乐新年快乐新年快乐</span>
+							</div>
+							<div class="cr-te-bott">
+								<span id="chakan">查看更多  ></span>
+							</div>
+						</div>
+					    </div>
+					    
+					    <div class="nocrit">
+					    	<img src="img/暂无评论.png" />
+					    </div>
+				    </div>
+					<div class="good-crit">
+						<div class="comtxt">
+							<div class="c-head">
+								<div class="img">
+									<img src="img/1.png" />
+									<p>王小二</p>
+								</div>
+								<p>2019-1-3 18:40:20</p>
+							</div>
+							<div class="c-xin">
+								<span class="iconfont icon-xingxing"></span>
+								<span class="iconfont icon-xingxing"></span>
+								<span class="iconfont icon-xingxing"></span>
+								<span class="iconfont icon-xingxing"></span>
+								<span class="iconfont icon-xingxing"></span>
+							</div>						
+							<div class="c-body"><p>很好  我已经脱离小白啦我已经脱离小白啦我已经脱离小白啦我已经脱离小白啦我已经脱离小白啦</p></div>						
+							<div class="c-tu">
+								<img src="img/lunbotu.jpg" />
+								<img src="img/lunbotu.jpg" />
+								<img src="img/lunbotu.jpg" />
+							</div>
+							<div class="crit">
+								<span class="iconfont icon-zan"></span>
+								<span  class="iconfont icon-changyonghuifu2" id="key-crit"></span>
+							</div>
+							<div class="crita  active" >
+							<div class="cr-te-mian">
+								<span class="cr-name">王小二：</span>
+								<span class="cr-t">新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐</span>
+							</div>
+							<div class="cr-te-mian">
+								<span class="cr-name">小默：</span>
+								<span class="cr-t">新年快乐新年快乐</span>
+							</div>
+							<div class="cr-te-mian">
+								<span class="cr-name">张二：</span>
+								<span class="cr-t">新年快乐新年快乐新年快乐新年快乐</span>
+							</div>
+							<div class="cr-te-mian">
+								<span class="cr-name">小默：</span>
+								<span class="cr-t">新年快乐新年快乐新年快乐</span>
+							</div>
+							<div class="cr-te-mian">
+								<span class="cr-name">王小二：</span>
+								<span class="cr-t">新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐</span>
+							</div>
+							<div class="cr-te-mian">
+								<span class="cr-name">李大爷：</span>
+								<span class="cr-t">新年快乐新年快乐</span>
+							</div>
+							<div class="cr-te-mian">
+								<span class="cr-name">张二：</span>
+								<span class="cr-t">新年快乐新年快乐新年快乐新年快乐</span>
+							</div>
+							<div class="cr-te-mian">
+								<span class="cr-name">小默：</span>
+								<span class="cr-t">新年快乐新年快乐新年快乐</span>
+							</div>
+							<div class="cr-te-mian">
+								<span class="cr-name">王小二：</span>
+								<span class="cr-t">新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐</span>
+							</div>
+							<div class="cr-te-mian">
+								<span class="cr-name">李大爷：</span>
+								<span class="cr-t">新年快乐新年快乐</span>
+							</div>
+							<div class="cr-te-mian">
+								<span class="cr-name">张二：</span>
+								<span class="cr-t">新年快乐新年快乐新年快乐新年快乐</span>
+							</div>
+							<div class="cr-te-mian">
+								<span class="cr-name">小默：</span>
+								<span class="cr-t">新年快乐新年快乐新年快乐</span>
+							</div>
+							<div class="cr-te-bott">
+								<span id="chakan">查看更多  ></span>
+							</div>
+						</div>
+					    </div>
+					    <div class="nocrit">
+					    	<img src="img/暂无评论.png" />
+					    </div>
+					</div>
+					<div class="ment-crit">
+						<div class="nocrit">
+					    	<img src="img/暂无评论.png" />
+					    </div>
+					</div>
+					<div class="bad-crit">
+						<div class="nocrit">
+					    	<img src="img/暂无评论.png" />
+					    </div>
+					</div>
+					<div class="judge">
+						你已评论过 不能在评论...
+					</div>
+					<div class="crit-key" id="crit-key">
+						<div class="dialog">
+							<div class="logtxt">
+								<input type="text" id="intxt" class="intxt" placeholder="说点什么..."/>
+							</div>
+					   </div>
+					   <div class="keyset" id="keyset"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="dis-guan">
+				<p class="dis-p iconfont icon-guanbi"></p>
+		</div>
+		<div class="discuss">
+			<div class="dis-text">
+			    <div class="cr-te-mian">
+			    	<div class="cr-head ">
+			    		<img src="img/3.png" />
+			    	</div>
+			    	<div class="cr-right">
+			    		<div class="cr-top">
+			    			<p class="cr-name-n">王小二</p>
+			    	        <p class="cr-time-n">2019-1-18 18:40:20</p>
+			    		</div>
+			    		<p class="cr-books">新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐</p>
+			    	</div>
+			    </div>
+			    <div class="cr-te-mian">
+			    	<div class="cr-head ">
+			    		<img src="img/3.png" />
+			    	</div>
+			    	<div class="cr-right">
+			    		<div class="cr-top">
+			    			<p class="cr-name-n">王小二</p>
+			    	        <p class="cr-time-n">2019-1-18 18:40:20</p>
+			    		</div>
+			    		<p class="cr-books">新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐</p>
+			    	</div>
+			    </div>
+			</div>
+		</div>
+		<div class="open-cont1" style="margin-top: 0;">
+			 <header class="mui-bar mui-bar-nav">
+				<p class="mui-pull-left iconfont icon-back" id="back"></p>
+			    <p class="iconfont icon-share mui-pull-right"></p>
+		     </header>
+			 <div class="to-poti">
+			    	<ul class="chapter">
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    			<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    		<li>
+			    		   <div class="img">
+			    		   	  <img src="img/intor.jpg" />
+			    		   </div>
+			    		   <p>从零开始制作粉色lumix拟物相机？</p>
+			    		</li>
+			    	</ul>
+			    </div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js" ></script>
+		<script type="text/javascript">
+			$("#intxt").bind("input propertychange", function() {//限制评论字符数位50
+	            var text = $("#intxt").val();
+	            var textlen = $("#intxt").val().length;
+	            if(textlen>50){
+	                var lenText=text.substring(0,50)
+	                $("#intxt").val(lenText)
+	            }
+            })
+			
+            var  Index=0;//评论分类下标
+            var oscrTop=0;//评论实时滚动top值
+			$(".comnt ul li").on("click",function(){//切换查看评论分类
+				console.log(2345678);
+				$(".comnt ul li p").removeClass("active")
+				$(this).children("p").addClass("active");
+				Index=$(this).index();
+				if(Index==0){
+					$(".all-crit").eq(0).show();
+					$(".good-crit").eq(0).hide();
+					$(".bad-crit").eq(0).hide();
+					$(".ment-crit").eq(0).hide();
+				}else if(Index==1){
+					$(".all-crit").eq(0).hide();
+					$(".good-crit").eq(0).show();
+					$(".bad-crit").eq(0).hide();
+					$(".ment-crit").eq(0).hide();
+				}else if(Index==2){
+					$(".all-crit").eq(0).hide();
+					$(".good-crit").eq(0).hide();
+					$(".bad-crit").eq(0).hide();
+					$(".ment-crit").eq(0).show();
+				}else if(Index==3){
+					$(".all-crit").eq(0).hide();
+					$(".good-crit").eq(0).hide();
+					$(".bad-crit").eq(0).show();
+					$(".ment-crit").eq(0).hide();
+				}
+			})
+			var crit=0;
+			var judge=1;//判断是否评论过
+			$(".icon-changyonghuifu2").unbind("click");
+			$(".icon-changyonghuifu2").bind("click",function(){//点击图标弹出对话框
+				$(".crit-key").toggle();
+				setTimeout(function(){
+			            $("#intxt").focus();
+			            $("#intxt").attr("placeholder","不能超过50个字符");
+			    },50)
+				$("#intxt").bind("blur",function(){//评论对话框失去焦点
+				  $(".crit-key").hide();
+			    })
+				var _this=$(this);
+				$("#intxt").unbind("focus");
+				$("#intxt").bind("focus",function(){//评论对话框获取焦点
+                $(document).unbind("keydown");
+				$(document).bind("keydown",function(e){//键盘按下
+			    		if(e.keyCode == 13){//按enter
+			    			if(judge==-1){
+			    				$(".judge").eq(0).show();
+			    				setTimeout(function(){
+			    					$(".judge").eq(0).hide();
+			    				},2000)
+			    			}else{
+			    				var a=$("#intxt").val();
+				      			$("#intxt").val("");
+				      			$("#intxt").attr("placeholder","说点什么...");
+				      			var date1 = new Date(+new Date()+8*3600*1000).toISOString().replace(/T/g,' ').replace(/\.[\d]{3}Z/,'');
+//		                       $(".time").html(date1)
+								$(".discuss").children(".dis-text").eq(0).append('<div class="cr-te-mian">'+
+																				    	'<div class="cr-head ">'+
+																				    		'<img src="img/3.png" />'+
+																				    	'</div>'+
+																				    	'<div class="cr-right">'+
+																				    		'<div class="cr-top">'+
+																				    			'<p class="cr-name-n">王小二</p>'+
+																				    	        '<p class="cr-time-n">'+date1+'</p>'+
+																				    		'</div>'+
+																				    		'<p class="cr-books">'+a+'</p>'+
+																				    	'</div>'+
+																				    '</div>');
+				      			var url4="https://www.easy-mock.com/mock/5c13456a1ed4e34c5e1346b9/ajax/vio";
+							    $.ajax({
+							    	type:"post",
+							    	url:url4,
+							    	async:true,
+							    	data:{
+							    		'crit':a
+							    	},
+									dataType:"json",
+									success:function(res){
+										$(".crit-key").hide();
+									},
+									error:function(){
+										alert('失败');
+									}
+							    });
+							    judge=-1;
+			    			}
+			    		}
+			  	})
+			})
+			})
+			$(".cr-te-bott").unbind("click");
+			$(".cr-te-bott").bind("click",function(){//展开所有评论
+				 oscrTop = $(document).scrollTop();//获取滚动top值
+				$(".discuss").show();
+				$(".dis-guan").show();
+				if(Index==0){
+					$(".all-crit").eq(0).hide();
+				}else if(Index==1){
+					$(".good-crit").eq(0).hide();
+				}else if(Index==2){
+					$(".ment-crit").eq(0).hide();
+				}else{
+					$(".bad-crit").eq(0).hide();
+				}
+				$(".crit-key").show();
+				setTimeout(function(){
+			            $("#intxt").focus();
+			            $("#intxt").attr("placeholder","不能超过50个字符");
+			    },50)
+				$("#intxt").bind("blur",function(){//评论对话框失去焦点
+				  $(".crit-key").show();
+			    })
+				var _this=$(this);
+				$("#intxt").unbind("focus");
+				$(document).bind("keydown",function(e){//键盘按下
+			    		if(e.keyCode == 13){//按enter
+			    				var a=$("#intxt").val();
+				      			$("#intxt").val("");
+				      			$("#intxt").attr("placeholder","说点什么...");
+				      			var date1 = new Date(+new Date()+8*3600*1000).toISOString().replace(/T/g,' ').replace(/\.[\d]{3}Z/,'');
+				      			$(".discuss").children(".dis-text").eq(0).append('<div class="cr-te-mian">'+
+																				    	'<div class="cr-head ">'+
+																				    		'<img src="img/3.png" />'+
+																				    	'</div>'+
+																				    	'<div class="cr-right">'+
+																				    		'<div class="cr-top">'+
+																				    			'<p class="cr-name-n">王小二</p>'+
+																				    	        '<p class="cr-time-n">'+date1+'</p>'+
+																				    		'</div>'+
+																				    		'<p class="cr-books">'+a+'</p>'+
+																				    	'</div>'+
+																				    '</div>');
+				      			var url4="https://www.easy-mock.com/mock/5c13456a1ed4e34c5e1346b9/ajax/vio";
+							    $.ajax({
+							    	type:"post",
+							    	url:url4,
+							    	async:true,
+							    	data:{
+							    		'crit':a
+							    	},
+									dataType:"json",
+									success:function(res){
+										
+									},
+									error:function(){
+										alert('失败');
+									}
+							    });
+							    judge=-1;
+			    			}
+			  	})
+			})
+			
+				    
+			$(".dis-guan p").eq(0).on("click",function(){//关闭评论查看更多
+	                $(".discuss").hide();
+	                $(".dis-guan").hide();
+					if(Index==0){
+						$(".all-crit").eq(0).show();
+					}else if(Index==1){
+						$(".good-crit").eq(0).show();
+					}else if(Index==2){
+						$(".ment-crit").eq(0).show();
+					}else{
+						$(".bad-crit").eq(0).show();
+					}
+					$(".crit-key").hide();
+					$(document).scrollTop(oscrTop);//重新设置top值
+			})
+			
+			
+			$('.toolg p').on("click",function(){//评论与简介切换
+				$('.toolg p').removeClass("active");
+				$(this).addClass("active");
+				var index=$(this).index();
+				if(index==0){
+					$(".mian .comnt").eq(0).css("display","none");
+					$(".mian .abstr").eq(0).css("display","block");
+				} else{
+					$(".mian .comnt").eq(0).css("display","block");
+					$(".mian .abstr").eq(0).css("display","none");
+				}
+			})
+			
+			
+	       $(".open-cont1").mousemove(function(ev){//页面滚动
+	       	  var oopen= $('.open-cont1').eq(0).get(0).offsetHeight;//内容框
+	       	  var Heig=window.document.body.offsetHeight;//窗口高度
+	       	  var minM=Heig-oopen;//最小margin值
+	       	  $('.open-cont1').eq(0).get(0).onmousewheel=scroll;
+	       	  function scroll(ev){
+					var direct = ev.wheelDelta;
+					var oldM = parseInt($('.open-cont1').eq(0).get(0).style.marginTop); //获取文字的上一次滑动之后的marginTop,注意，此方法只能获取标签之上的行内样式
+					console.log(oldM)
+					if(direct<0&&oldM>minM){ //判断滚轮向手心方向滚动，则让文字向上动
+						oldM-=50;
+						$('.open-cont1').eq(0).get(0).style.marginTop = oldM + 'px';
+					}
+					if(direct>0&&oldM<0){ //判断滚轮向滚动，则让文字向下动
+						oldM+=50;
+						$('.open-cont1').eq(0).get(0).style.marginTop = oldM + 'px';
+					}
+					return false;
+				}
+	       })
+		
+			
+			
+			
+			
+			
+			
+			
+			
+			mui.init();
+			$("#btn-open").click(function(){//页面跳转 传id
+			    window.open('intro.html');
+			    var id=4567;
+			    var url1="https://www.easy-mock.com/mock/5c13456a1ed4e34c5e1346b9/ajax/vio";
+			    $.ajax({
+			    	type:"get",
+			    	url:url1,
+			    	async:true,
+			    	data:{
+			    		'id':id
+			    	},
+					dataType:"json",
+					success:function(){
+						alert('成功')
+					},
+					error:function(){
+						alert('失败')
+					}
+			    });
+			});
+			
+			
+			$('#open').click(function(){
+				$('.vid').eq(0).css('display','none');
+				$('#header').css('display','none');
+				$('.open-cont1').eq(0).css('display','block');
+			})
+
+			$('#back').click(function(){
+				$('.vid').eq(0).css('display','block');
+				$('#header').css('display','block');
+				$('.open-cont1').eq(0).css('display','none')
+			})
+			
+			var chapt=false;//判断集数是否展开
+			$('#coll').click(function(){
+				if(chapt){
+					$('.mian .to-bott .chapter').css('overflow','hidden');
+				    $('.mian .to-bott').css('margin-bottom','0px');
+				    $(this).attr('class','iconfont icon-xiala-');
+				    chapt=false;
+				}else{
+					$('.mian .to-bott .chapter').to('overflow','inherit');
+				    $('.mian .to-bott').css('margin-bottom','40px');
+				    $(this).attr('class','iconfont icon-xiangshangshouqi');
+				    chapt=true;
+				}
+				
+			})
+			
+			
+			function fn(){//窗口自适应
+				var ele = document.getElementsByTagName('html')[0];
+				var w = ele.offsetWidth;
+				var r = w / 10;  
+				ele.style.fontSize = r + 'px';
+			}
+			fn();
+			window.onresize = function(){
+//				console.log(1);
+				fn();
+			}
+			
+			
+			var len=$('.chapter li').length;//视频播放
+			for (var i=0;i<len;i++){
+				$('.chapter li').eq(i).click(function(){
+					$('.chapter li').removeClass('active');
+					$(this).toggleClass('active');
+					var url1 = 'https://www.easy-mock.com/mock/5c13456a1ed4e34c5e1346b9/ajax/vio';
+					var index=$(this).index();
+					$.ajax({
+						type:"post", 
+						url:url1,//  参数值不要和参数名字重复。
+						async:true,
+						dataType:"json",
+						success:function(txt){
+							console.log(txt);
+							$('video').attr('src',txt.str[index].kc_url);
+							$('video').attr('poster',txt.str[index].img_url);
+						},
+						error:function(){
+							alert('失败')
+						}
+					});
+				})
+			}
+			
+			
+			var zan=false;//判断是否点赞
+			var cai=false;//判断是否差评
+			$('#zan').click(function(){
+				if(cai==false){
+					var num=$('#zannum').html();
+					$(this).toggleClass('active');
+					$('#zannum').toggleClass('active');
+					if(zan){
+						zan=false;
+						num--;
+					}else{
+						zan=true;
+						num++;
+					}
+					$('#zannum').html(num);
+					var url1 = 'https://www.easy-mock.com/mock/5c13456a1ed4e34c5e1346b9/ajax/vio';
+						$.ajax({
+							type:"post", 
+							url:url1,//  参数值不要和参数名字重复。
+							async:true,
+							data:{
+								'zen_status':zan,
+								'zen':num
+							},
+							dataType:"json",
+							success:function(txt){
+								alert('成功');
+							},
+							error:function(){
+								alert('失败');
+							}
+						});
+				}
+			})
+			
+			
+			
+			$('#cai').click(function(){
+				if(zan==false){
+				    var num=$('#cainum').html();
+					$(this).toggleClass('active');
+					$('#cainum').toggleClass('active');
+					if(cai){
+						cai=false;
+						num--;
+					}else{
+						cai=true;
+						num++;
+					}
+					$('#cainum').html(num);
+					var url1 = 'https://www.easy-mock.com/mock/5c13456a1ed4e34c5e1346b9/ajax/vio';
+						$.ajax({
+							type:"post", 
+							url:url1,//  参数值不要和参数名字重复。
+							async:true,
+							data:{
+								'cai_status':cai,
+								'cai':num
+							},
+							dataType:"json",
+							success:function(txt){
+								alert('成功');
+							},
+							error:function(){
+	//							alert('失败');
+							}
+						});
+				}
+			})
+			
+			var fill=false;//判断是否分享
+			$('#fill').click(function(){
+				var num=$('#fillnum').html();
+				$(this).toggleClass('active');
+				$('#fillnum').toggleClass('active');
+				if(fill){
+					fill=false;
+					num--;
+				}else{
+					fill=true;
+					num++;
+				}
+				$('#fillnum').html(num);
+				var url1 = 'https://www.easy-mock.com/mock/5c13456a1ed4e34c5e1346b9/ajax/vio';
+					$.ajax({
+						type:"post", 
+						url:url1,//  参数值不要和参数名字重复。
+						async:true,
+						data:{
+							'cai_status':fill,
+							'cai':num
+						},
+						dataType:"json",
+						success:function(txt){
+							alert('成功');
+						},
+						error:function(){
+//							alert('失败');
+						}
+					});
+			})
+			
+			var fenx=false;//判断是否分享
+			$('#fenx').click(function(){
+				var num=$('#fenxnum').html();
+				$(this).toggleClass('active');
+				$('#fenxnum').toggleClass('active');
+				if(fenx){
+					fenx=false;
+					num--;
+				}else{
+					fenx=true;
+					num++;
+				}
+				$('#fenxnum').html(num);
+				var url1 = 'https://www.easy-mock.com/mock/5c13456a1ed4e34c5e1346b9/ajax/vio';
+					$.ajax({
+						type:"post", 
+						url:url1,//  参数值不要和参数名字重复。
+						async:true,
+						data:{
+							'cai_status':fenx,
+							'cai':num
+						},
+						dataType:"json",
+						success:function(txt){
+							alert('成功');
+						},
+						error:function(){
+//							alert('失败');
+						}
+					});
+			})
+			
+			
+			
+			
+			
+			var foll=false;//判断是否关注
+			$('#follow').click(function(){
+				$(this).toggleClass('active');
+				var num=$('#folnum').html();
+				if(foll){
+					$('#follow span').html('+ 	关注');
+					foll=false;
+					num--;
+				}else{
+					$('#follow span').html('已关注');
+					foll=true;
+					num++;
+				}
+				$('#folnum').html(num);
+				var url1 = 'https://www.easy-mock.com/mock/5c13456a1ed4e34c5e1346b9/ajax/foll';
+					$.ajax({
+						type:"post", 
+						url:url1,//参数值不要和参数名字重复。
+						async:true,
+						data:{
+							'fens_status':foll,
+							'fens':num
+						},
+						dataType:"json",
+						success:function(txt){
+							console.log(txt)
+						},
+						error:function(){
+							alert('失败')
+						}
+					});
+			})
+			
+			mui.init()
+			var oVi = $('#video').get(0);
+			var d;//视频总时长
+			var control = false; //视频播放与否，false代表暂停
+			oVi.addEventListener('canplaythrough',function(){ //确保视频文件载入成功
+	//			console.log('视频加载成功')
+				d = oVi.duration;
+				$('.duration').html(changeTime(d));
+			})
+			function changeTime(t){ //t是以秒为单位的时间参数
+				var m = Math.floor(t/60);
+				var s = Math.ceil(t%60);
+				m = m<10?('0'+m):m;
+				s = s<10?('0'+s):s;
+				return m+':'+s;
+			}
+			
+			var timer = null; //视频播放的时候，触发的定时器
+			$('.control li').eq(0).off().click(function(){
+	//			console.log(123);
+				clearInterval(timer);
+				if(control){
+					console.log('暂停')
+					$('#video').get(0).pause();
+					$(this).find('i').attr('class','iconfont icon-bofang');
+					clearInterval(timer);
+				}else{
+					console.log('播放')
+					$('#video').get(0).play();
+					$(this).find('i').attr('class','iconfont icon-zanting')
+					timer = setInterval(function(){
+						var cT = oVi.currentTime; //实时获取当前播放时间
+	//					console.log(typeof cT);
+						$('.current').html(changeTime(cT));
+	//						条宽度 / 总宽度
+	//						cT/d = ?/400
+						$('.inner').css('width',cT*440/d+'px')
+	//					console.log(d);
+					},1000)
+				}
+				control = !control;
+			})
+			
+			$('.dot').mousedown(function(ev){//视频进度条
+			var beginX = ev.clientX;
+			var beginW = $('.inner').width();
+			$(document).mousemove(function(ev){
+				var x = ev.clientX;
+				var w = beginW+x-beginX;
+				if(w>440){
+					w=440;
+				}else if(w<0){
+					w=0;
+				}
+				$('.inner').css('width',w+'px');
+				var current = w*d /440; //拖拽过程中,计算出对应的播放时间
+				console.log(current);
+				var cur=current%100;
+				oVi.currentTime =cur; //chrome兼容处理
+				console.log(oVi.currentTime);
+				$('.current').html(changeTime(current));
+			})
+			$(document).mouseup(function(){
+				$(this).off();
+			})
+			return false;
+		})
+			
+		$('.icon-fangda').click(function(){//全屏播放
+			if(oVi.requestFullScreen){
+				oVi.requestFullScreen()
+			}else if(oVi.mozRequestFullScreen){
+				oVi.mozRequestFullScreen()
+			}else if(oVi.webkitRequestFullScreen){
+				oVi.webkitRequestFullScreen();
+			}else{
+				oVi.msRequestFullScreen();
+			}
+		})
+		
+		//点赞系列
+//		var len=$('.mui-tab-item').length;
+//		for (var i=0;i<len;i++) {
+//			$('.mui-icon.iconfont').eq(i).click(function(){
+//				$('.mui-icon.iconfont').removeClass('active');
+//				$('.mui-icon.iconfont').next('.mui-tab-label').removeClass('active');
+//				$(this).toggleClass('active');
+//				$(this).next('.mui-tab-label').toggleClass('active');
+//			})
+//		}
+		
+		//选集系列
+		var len=$('.mui-bar-tab li').length;
+		for (var i=0;i<len;i++) {
+			$('.mui-bar-tab li').eq(i).click(function(){
+				$('.mui-bar-tab li').removeClass('active');
+				$(this).toggleClass('active');
+			})
+		}
+		</script>
+	</body>
+
+</html>
